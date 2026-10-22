@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智光商工 第一次國文段考・錯題全方位圖文精析診斷網</title>
+  <meta name="description" content="針對智光商工115學年度高一第一次國文段考考卷（徐奕甯）錯題進行全方位深度解析，圖文並茂，提供原始真跡對照、失分盲點診斷、成語思維心智圖與互動重測功能。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" id="announcement-banner">
+    <div class="container banner-flex">
+      <span class="badge-pill">考卷特別提醒</span>
+      <p>配合題第 2 題（現成偏誤）你的答案是正確的！卷面標註 -12 易誤解為全扣，總分 32 分已補入，詳見下方爭議點說明。</p>
+      <button class="banner-close" id="btn-close-banner" aria-label="關閉提示">✕</button>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="main-header" id="main-nav">
+    <div class="container nav-content">
+      <div class="logo-area">
+        <div class="logo-icon">📖</div>
+        <div class="logo-text">
+          <h1>國文段考錯題診斷室</h1>
+          <span class="sub-text">智光商工 115學年度第1學期 第一次段考</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#dashboard" class="nav-item active">成績儀表板</a>
+        <a href="#exam-viewer" class="nav-item">考卷真跡</a>
+        <a href="#error-breakdown" class="nav-item">錯題精解庫</a>
+        <a href="#translation-focus" class="nav-item">翻譯扣11分專題</a>
+        <a href="#quiz-challenge" class="nav-item">盲測通關挑戰</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" title="切換深淺模式" aria-label="切換主題">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="btn-print" class="btn-secondary" title="列印或另存為PDF訂正本">
+          🖨️ 列印訂正本
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="page-body">
+
+    <!-- Hero Section: Student Card & Score Diagnostics -->
+    <section class="section hero-section" id="dashboard">
+      <div class="container">
+        
+        <!-- Student Info Header Card -->
+        <div class="glass-card student-hero-card">
+          <div class="student-profile">
+            <div class="avatar-box">
+              <span class="avatar-letter">甯</span>
+              <span class="grade-tag">資處一仁</span>
+            </div>
+            <div class="profile-details">
+              <div class="student-meta-tags">
+                <span class="tag school-tag">新北市私立智光商工</span>
+                <span class="tag">日間部 115學年</span>
+                <span class="tag">座號 17</span>
+              </div>
+              <h2 class="student-name">徐奕甯 <span class="exam-title-badge">第一次段考・國語文試卷</span></h2>
+              <p class="exam-summary-desc">
+                本網站已全面轉正並解析你的 <code>p1.jpg</code> 與 <code>p2.jpg</code> 考卷。本次總得分為 <strong>32 分</strong>，共計 <strong>21 處</strong>失分點。不用灰心，透過本系統「圖文並茂」的五維剖析與互動重測，把每一次錯誤轉化為下次段考前進 40 分的踏腳石！
+              </p>
+            </div>
+          </div>
+
+          <!-- Total Score Display -->
+          <div class="score-display-cluster">
+            <div class="score-dial">
+              <svg class="score-circle-svg" viewBox="0 0 120 120">
+                <circle class="score-circle-bg" cx="60" cy="60" r="50"></circle>
+                <circle class="score-circle-progress" cx="60" cy="60" r="50" style="stroke-dashoffset: calc(314 - (314 * 32) / 100);"></circle>
+              </svg>
+              <div class="score-dial-inner">
+                <span class="score-num">32</span>
+                <span class="score-max">/ 100 分</span>
+              </div>
+            </div>
+            <div class="score-status-badge">
+              <span class="status-dot dot-red"></span>
+              <span>急需重點補救（全卷答對率 32%）</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Score Breakdown Grid -->
+        <div class="section-scores-grid">
+          <!-- Card 1 -->
+          <div class="glass-card score-stat-card">
+            <div class="stat-top">
+              <span class="stat-icon">🔤</span>
+              <span class="stat-title">一、字音題</span>
+              <span class="stat-badge badge-green">扣 2 分</span>
+            </div>
+            <div class="stat-score-val">
+              <span class="val-current">14</span>
+              <span class="val-total">/ 16 分</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill fill-green" style="width: 87.5%;"></div>
+            </div>
+            <p class="stat-remark">答對 7 題 / 錯 1 題（第1題「晦奧」答對、第5題「齏臼」扣2分），基礎發音掌握度佳！</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card score-stat-card">
+            <div class="stat-top">
+              <span class="stat-icon">🧩</span>
+              <span class="stat-title">二、配合題</span>
+              <span class="stat-badge badge-red">失分高達 83%</span>
+            </div>
+            <div class="stat-score-val">
+              <span class="val-current">2</span>
+              <span class="val-total">/ 12 分</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill fill-red" style="width: 16.7%;"></div>
+            </div>
+            <p class="stat-remark">答對 1 題 / 錯 5 題。存活者偏誤與成語「身無長物」為失分重災。</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card score-stat-card danger-glow">
+            <div class="stat-top">
+              <span class="stat-icon">✍️</span>
+              <span class="stat-title">三、翻譯題</span>
+              <span class="stat-badge badge-red">重災扣 11 分</span>
+            </div>
+            <div class="stat-score-val">
+              <span class="val-current">1</span>
+              <span class="val-total">/ 12 分</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill fill-red" style="width: 8.3%;"></div>
+            </div>
+            <p class="stat-remark">僅拿 1 分！漏譯核心提問句，抄寫原文未做白話轉換。</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-card score-stat-card">
+            <div class="stat-top">
+              <span class="stat-icon">📝</span>
+              <span class="stat-title">四、綜合測驗</span>
+              <span class="stat-badge badge-orange">扣 45 分</span>
+            </div>
+            <div class="stat-score-val">
+              <span class="val-current">15</span>
+              <span class="val-total">/ 60 分</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill fill-orange" style="width: 25%;"></div>
+            </div>
+            <p class="stat-remark">20 題中答對 5 題、答錯 15 題。審題粗心與課文主旨混淆為主因。</p>
+          </div>
+        </div>
+
+        <!-- Teacher Mark Special Note Alert -->
+        <div class="alert-box alert-amber">
+          <div class="alert-icon">⚖️</div>
+          <div class="alert-text">
+            <h4>【考卷批改特別鑑定】配合題第 2 題的分數疑雲</h4>
+            <p>
+              你在考卷配合題第 2 題（用過去工作經驗否定AI發展）答案格中填寫了 <strong>(B)</strong>，此題答案正是「現成偏誤 (B)」，<strong>完全正確！</strong>
+              雖然考卷右上方老師隨手標註了紅字「-12」，但請注意：<code>14 (字音) + 2 (配合題第2題) + 1 (翻譯) + 15 (綜合測驗 5 題) = 32 分</code>。老師總分核算已包含了這 2 分，但若下次遇見卷面標註全扣的情況，建議主動找老師禮貌確認，避免權益受損！
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Major Diagnostic Pillars -->
+        <div class="diagnostics-summary-row mt-4">
+          <h3 class="section-subtitle">🎯 本次段考 4 大致命痛點診斷</h3>
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-badge badge-1">痛點 1</span>
+                <h4>逆向審題盲點（看反題目）</h4>
+              </div>
+              <p>題目明明問「何者<strong>錯誤</strong>」或「何者<strong>不妥</strong>」，卻下意識選了「完全正確」的選項，直接白白送掉 6~9 分！（如第7題、第14題）</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-badge badge-2">痛點 2</span>
+                <h4>成語字詞望文生義</h4>
+              </div>
+              <p>將「深以為然」誤以為是不贊同、把「身無長物」的長物當成長度、把「代人捉刀」誤當成一手遮天。成語典故未真正落實到腦海中。</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-badge badge-3">痛點 3</span>
+                <h4>哲學課文主旨背道而馳</h4>
+              </div>
+              <p>〈從感覺到事實的差距〉核心在於破除直覺、走出同溫層，作答時卻選了「聽從直覺當機立斷」或「順從多數人想法」，恰好掉入作者批判的陷阱。</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <span class="pillar-badge badge-4">痛點 4</span>
+                <h4>文言翻譯缺乏字字對譯</h4>
+              </div>
+              <p>翻譯題直接抄寫文言原文，遺漏了「白雪紛紛何所似」的提問，甚至寫出「甚至到大笑了」這種語法不通的拼湊句，導致 12 分只拿 1 分。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Full Exam Viewer (High-Res Inspector) -->
+    <section class="section exam-viewer-section" id="exam-viewer">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-kicker">ORIGINAL EXAM PAPER</span>
+          <h2 class="section-heading">考卷原卷高解析對照鏡</h2>
+          <p class="section-subheading">我們已為你將原始 <code>p1.jpg</code> 與 <code>p2.jpg</code> 旋轉為 100% 正向，點擊題目熱點可直接跳轉至該題詳解。</p>
+        </div>
+
+        <div class="viewer-tabs">
+          <button class="tab-btn active" data-page="p1">第 1 頁（正面・字音/配合/翻譯/綜合Q1-4）</button>
+          <button class="tab-btn" data-page="p2">第 2 頁（背面・綜合測驗 Q5-20）</button>
+        </div>
+
+        <div class="glass-card exam-canvas-card">
+          <!-- Page 1 View -->
+          <div class="exam-page-view active" id="view-p1">
+            <div class="exam-header-bar">
+              <span class="paper-title">智光商工 115學年度第1學期 第一次段考（正面）</span>
+              <span class="paper-score-pill">卷面得分：32 分</span>
+            </div>
+            <div class="image-wrapper">
+              <img src="assets/p1_upright.jpg" alt="考卷第1頁原圖" class="exam-full-img" id="img-p1">
+            </div>
+          </div>
+
+          <!-- Page 2 View -->
+          <div class="exam-page-view" id="view-p2">
+            <div class="exam-header-bar">
+              <span class="paper-title">智光商工 115學年度第1學期 第一次段考（背面）</span>
+              <span class="paper-score-pill">綜合測驗 Q5 ~ Q20</span>
+            </div>
+            <div class="image-wrapper">
+              <img src="assets/p2_upright.jpg" alt="考卷第2頁原圖" class="exam-full-img" id="img-p2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Comprehensive Error Breakdown -->
+    <section class="section error-breakdown-section" id="error-breakdown">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-kicker">DETAILED EXPLANATIONS</span>
+          <h2 class="section-heading">錯題全方位圖文精析庫</h2>
+          <p class="section-subheading">每道錯題均附有「原始試卷剪裁真跡」、「錯誤原因深入診斷」、「考點全彩圖解」、「記憶口訣」與「即刻自我檢驗」！</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls-wrap">
+          <div class="filter-tabs" id="filter-tabs">
+            <button class="filter-btn active" data-filter="all">全部錯題 (22項)</button>
+            <button class="filter-btn" data-filter="logic">🧠 思考偏誤篇 (4題)</button>
+            <button class="filter-btn" data-filter="idiom">📚 成語辨析篇 (4題)</button>
+            <button class="filter-btn" data-filter="culture">🏛️ 世說新語與國學 (7題)</button>
+            <button class="filter-btn" data-filter="reading">📖 課文閱讀理解 (5題)</button>
+            <button class="filter-btn" data-filter="phonetic">✍️ 字音字形 (2題)</button>
+            <button class="filter-btn" data-filter="translation">🎯 翻譯專題 (1題)</button>
+          </div>
+          <div class="filter-actions">
+            <button class="btn-sm btn-ghost" id="btn-expand-all">展開全部解析</button>
+            <button class="btn-sm btn-ghost" id="btn-collapse-all">收合全部解析</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Questions List Container -->
+        <div class="error-cards-container" id="error-cards-list">
+          <!-- Populated by app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Translation Deep-Dive (Special Feature) -->
+    <section class="section translation-focus-section" id="translation-focus">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-kicker">SPECIAL MASTERCLASS</span>
+          <h2 class="section-heading">文言文翻譯重災區特訓：〈詠絮之才〉</h2>
+          <p class="section-subheading">本次翻譯大題 12 分僅得 1 分，失分高達 11 分！掌握「字字落實、補全省略、現代順讀」三大關鍵，下次段考穩拿 12 分滿分！</p>
+        </div>
+
+        <div class="glass-card trans-deep-card">
+          <div class="trans-split">
+            <div class="trans-original-col">
+              <h3>📜 原文文言句</h3>
+              <blockquote class="ancient-quote">
+                俄而雪驟，公欣然曰：「白雪紛紛何所似？」兄子胡兒曰：「撒鹽空中差可擬。」兄女曰：「未若柳絮因風起。」公大笑樂。
+              </blockquote>
+              <div class="img-preview-box">
+                <p class="caption">你的考卷作答真跡剪裁：</p>
+                <img src="assets/clip_translation.jpg" alt="翻譯題考卷真跡" class="clip-img">
+              </div>
+            </div>
+
+            <div class="trans-mistakes-col">
+              <h3>🚨 為什麼只給 1 分？四大致命傷</h3>
+              <ul class="fatal-list">
+                <li>
+                  <span class="x-mark">❌</span>
+                  <div>
+                    <strong>致命盲點 1：核心問題整句漏譯！</strong>
+                    <p>謝安出題的「白雪紛紛何所似？」完全沒有翻譯出來，這是全段對話的核心起點！</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="x-mark">❌</span>
+                  <div>
+                    <strong>致命盲點 2：直接照抄原文</strong>
+                    <p>把「撒鹽空中差可擬」和「未若柳絮因風起」抄在括號裡，閱卷老師認定為「並未做白話翻譯」。</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="x-mark">❌</span>
+                  <div>
+                    <strong>致命盲點 3：生硬拼湊與文法崩潰</strong>
+                    <p>塗改後寫成「公欣然甚至到大笑了」，中文語法完全不通順；「雪下的更大」的「的」應為動詞後補語「得」。</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step-by-Step Translation Master Table -->
+          <div class="trans-table-wrap mt-4">
+            <h3>📖 逐字逐句拆解標準精譯表</h3>
+            <div class="table-responsive">
+              <table class="interactive-trans-table">
+                <thead>
+                  <tr>
+                    <th>文言原文</th>
+                    <th>字詞解析（重點得分點）</th>
+                    <th>標準白話翻譯</th>
+                    <th>得分關鍵注意事項</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>俄而</strong>雪<strong>驟</strong></td>
+                    <td>俄而：不久。驟：急、大。</td>
+                    <td>不久，雪下得更急，</td>
+                    <td>「俄而」常考時間副詞，務必翻成「不久」或「一會兒」。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>公</strong><strong>欣然</strong>曰</td>
+                    <td>公：指謝太傅（謝安）。欣然：興致勃勃的樣子。</td>
+                    <td>謝太傅興致勃勃地說：</td>
+                    <td>「公」譯為「謝太傅」或「謝安」；「欣然」譯為「興致勃勃地」。</td>
+                  </tr>
+                  <tr class="highlight-row">
+                    <td>「白雪紛紛<strong>何所似</strong>？」</td>
+                    <td>何所似：倒裝句，即「似何所」，像什麼呢？</td>
+                    <td>「紛飛的白雪像什麼呢？」</td>
+                    <td><strong>漏譯扣重分！</strong>必須完整翻出提問句。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>兄子胡兒</strong>曰</td>
+                    <td>兄子：姪子。胡兒：謝朗乳名。</td>
+                    <td>姪子胡兒說：</td>
+                    <td>「兄子」譯為「姪子」，胡兒可保留或註記謝朗。</td>
+                  </tr>
+                  <tr class="highlight-row">
+                    <td>「撒鹽空中<strong>差可擬</strong>。」</td>
+                    <td>差：大體、大約。擬：相比、比擬。</td>
+                    <td>「把鹽撒在空中大約可以比擬了。」</td>
+                    <td><strong>「差可擬」必須翻譯！</strong>不可抄原文。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>兄女</strong>曰</td>
+                    <td>兄女：姪女（指才女謝道韞）。</td>
+                    <td>姪女謝道韞說：</td>
+                    <td>「兄女」譯為「姪女」，指東晉著名女詩人謝道韞。</td>
+                  </tr>
+                  <tr class="highlight-row">
+                    <td>「<strong>未若</strong>柳絮<strong>因</strong>風起。」</td>
+                    <td>未若：不如說。因：憑藉。起：飛揚。</td>
+                    <td>「不如說像柳絮憑藉風勢在空中飛揚。」</td>
+                    <td>「未若」=不如說，「因」=憑藉。全篇詩眼！</td>
+                  </tr>
+                  <tr>
+                    <td>公<strong>大笑樂</strong>。</td>
+                    <td>大笑樂：樂得開懷大笑。</td>
+                    <td>謝太傅聽了樂得開懷大笑。</td>
+                    <td>順暢收尾，不可寫成「甚至到大笑」。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Ideal Full Translation -->
+          <div class="ideal-trans-box mt-3">
+            <span class="gold-star">⭐ 滿分標準範本背誦卡：</span>
+            <p>
+              「不久，雪下得更急，謝太傅興致勃勃地說：『紛飛的白雪像什麼呢？』姪子胡兒說：『把鹽撒在空中大約可以比擬了。』姪女謝道韞說：『不如說像柳絮憑藉風勢在空中飛揚。』謝太傅聽了樂得開懷大笑。」
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Quiz Challenge (Interactive Test Mode) -->
+    <section class="section quiz-challenge-section" id="quiz-challenge">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-kicker">PRACTICE MAKES PERFECT</span>
+          <h2 class="section-heading">錯題盲測通關大挑戰</h2>
+          <p class="section-subheading">將段考 21 道錯題化身為互動測驗卡！親自動手重答一遍，立即檢驗自己是否真正搞懂，通關率達 100% 即可領取段考進步證書！</p>
+        </div>
+
+        <div class="glass-card quiz-master-card" id="quiz-runner">
+          <div class="quiz-controls-bar">
+            <div class="quiz-progress-info">
+              <span>進度：<strong id="quiz-current-idx">1</strong> / <strong id="quiz-total-count">21</strong></span>
+              <span class="quiz-score-badge">目前答對：<strong id="quiz-correct-count">0</strong> 題</span>
+            </div>
+            <div class="quiz-bar-outer">
+              <div class="quiz-bar-inner" id="quiz-progress-bar" style="width: 5%;"></div>
+            </div>
+          </div>
+
+          <div class="quiz-card-body" id="quiz-card-body">
+            <!-- Dynamic quiz question injected by app.js -->
+          </div>
+
+          <div class="quiz-nav-footer">
+            <button class="btn-secondary" id="btn-prev-quiz">上一題</button>
+            <button class="btn-primary" id="btn-next-quiz">下一題 ➡️</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Printable Summary Sheet (Hidden on screen, optimized for print) -->
+    <div class="print-only-container" id="printable-sheet">
+      <div class="print-header">
+        <h2>智光商工日間部 115學年度第1學期 第一次段考 國語文試卷・錯題訂正總筆記</h2>
+        <div class="print-student-info">
+          <span>科別：資處科</span>
+          <span>班級：一仁</span>
+          <span>座號：17</span>
+          <span>姓名：徐奕甯</span>
+          <span>段考得分：32 分</span>
+        </div>
+      </div>
+      <div class="print-items-list" id="print-items-target">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="btn-lightbox-close" aria-label="關閉放大預覽">✕</button>
+      <img src="" alt="放大考卷圖片" id="lightbox-img" class="lightbox-image">
+      <div class="lightbox-caption" id="lightbox-caption">考卷細節檢視</div>
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p><strong>國文段考錯題全方位診斷系統</strong> · 專為資處一仁 徐奕甯 同學量身打造</p>
+        <p class="copyright">學如逆水行舟，不進則退；正視每一次錯誤，便是智慧增長的起點！💪</p>
+      </div>
+      <div class="footer-right">
+        <a href="#dashboard" class="back-to-top">⬆️ 回到頂部</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="questionsData.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
